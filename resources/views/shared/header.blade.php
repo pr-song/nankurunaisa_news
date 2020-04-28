@@ -24,8 +24,6 @@
                         <div class="top-social-info">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
                             <a href="#"><i class="fab fa-youtube"></i></a>
                         </div>
                         <!-- Top Search Area -->
@@ -35,8 +33,12 @@
                                 <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                             </form>
                         </div>
-                        <!-- Login -->
-                        <a href="login.html" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
+                        @if (Auth::check())
+                            <a href="{{ route('logout') }}" class="login-btn"><i class="fas fa-sign-out-alt" aria-hidden="true"></i></a>         
+                        @else
+                            <!-- Login -->
+                            <a href="{{ route('login') }}" class="login-btn"><i class="fas fa-sign-in-alt" aria-hidden="true"></i></i></a>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -52,7 +54,8 @@
                 <nav class="classy-navbar justify-content-between" id="vizewNav">
 
                     <!-- Nav brand -->
-                    <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                    <a href="{{ route('home') }}" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -69,7 +72,7 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li class="active"><a href="index.html">Home</a></li>
+                                <li class="active"><a href="{{ route('home') }}">Home</a></li>
                                 <li><a href="archive-list.html">Archives</a></li>
                                 <li><a href="#">Pages</a>
                                     <ul class="dropdown">
@@ -80,7 +83,7 @@
                                         <li><a href="video-post.html">- Single Video Post</a></li>
                                         <li><a href="contact.html">- Contact</a></li>
                                         <li><a href="typography.html">- Typography</a></li>
-                                        <li><a href="login.html">- Login</a></li>
+                                        <li><a href="{{ route('login') }}">- Login</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Features</a>
@@ -127,7 +130,25 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="{{ route('contact') }}">Contact</a></li>
+                                @if (Auth::check())
+                                <li><a href="#">
+                                    @php 
+                                        $arr = explode(" ",(Auth::user()->name));
+                                        print reset($arr);
+                                    @endphp</a>
+                                    <ul class="dropdown">
+                                        <li><a href="index.html">- Home</a></li>
+                                        <li><a href="archive-list.html">- Archive List</a></li>
+                                        <li><a href="archive-grid.html">- Archive Grid</a></li>
+                                        <li><a href="single-post.html">- Single Post</a></li>
+                                        <li><a href="video-post.html">- Single Video Post</a></li>
+                                        <li><a href="contact.html">- Contact</a></li>
+                                        <li><a href="typography.html">- Typography</a></li>
+                                        <li><a href="{{ route('login') }}">- Login</a></li>
+                                    </ul>
+                                </li>
+                                @endif
                             </ul>
                         </div>
                         <!-- Nav End -->

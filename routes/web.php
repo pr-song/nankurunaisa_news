@@ -13,10 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+/* ##### Static Pages ##### */
+Route::get('/', 'StaticPagesController@home')->name('home');
+Route::get('/about', 'StaticPagesController@about')->name('about');
+Route::get('/contact', 'StaticPagesController@contact')->name('contact');
 
-Route::get('/about', function(){
-    return view('about');
-});
+Auth::routes();
+
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
