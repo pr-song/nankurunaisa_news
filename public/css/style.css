@@ -1931,4 +1931,43 @@ select.form-control {
 textarea.form-control {
   height: 140px; }
 
+input[type=text]:focus {
+  background-color: whitesmoke !important;
+}
+
+input[type=text] {
+  font-size: 16px !important;
+  color: rgb(41,76,122) !important;
+  background-color: whitesmoke !important;
+}
+
+input[type=email]:focus {
+  background-color: whitesmoke !important;
+}
+
+input[type=email] {
+  font-size: 16px !important;
+  color: rgb(41,76,122) !important;
+  background-color: whitesmoke !important;
+}
+
+input[type=password]:focus {
+  background-color: whitesmoke !important;
+}
+
+input[type=password] {
+  font-size: 16px !important;
+  color: rgb(41,76,122) !important;
+  background-color: whitesmoke !important;
+}
+
+select:focus {
+  background-color: whitesmoke !important;
+}
+
+select {
+  background-color: whitesmoke !important;
+  color: rgb(41,76,122) !important;
+  font-size: 16px !important;
+}
 /*# sourceMappingURL=style.css.map */
