@@ -21,9 +21,9 @@
                                 <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
                                     should be completed Thursday</a>
                                 <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
                                 </div>
                             </div>
 
@@ -45,9 +45,9 @@
                                 <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
                                     should be completed Thursday</a>
                                 <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
                                 </div>
                             </div>
 
@@ -69,9 +69,9 @@
                                 <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
                                     should be completed Thursday</a>
                                 <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
                                 </div>
                             </div>
 
@@ -94,9 +94,9 @@
                                 <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
                                     should be completed Thursday</a>
                                 <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
                                 </div>
                             </div>
 
@@ -119,9 +119,9 @@
                                 <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
                                     should be completed Thursday</a>
                                 <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
                                 </div>
                             </div>
 
@@ -144,9 +144,9 @@
                                 <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
                                     should be completed Thursday</a>
                                 <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
                                 </div>
                             </div>
 
@@ -169,9 +169,9 @@
                                 <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
                                     should be completed Thursday</a>
                                 <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
                                 </div>
                             </div>
 
@@ -196,9 +196,9 @@
                                 <div class="post-content">
                                     <h6 class="post-title">Boys 'doing well' after Thai cave rescue</h6>
                                     <div class="post-meta d-flex justify-content-between">
-                                        <span><i class="fa fa-comments-o" aria-hidden="true"></i> 25</span>
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 11</span>
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 19</span>
+                                        <span><i class="far fa-comments" aria-hidden="true"></i> 25</span>
+                                        <span><i class="far fa-eye" aria-hidden="true"></i> 11</span>
+                                        <span><i class="far fa-thumbs-up" aria-hidden="true"></i> 19</span>
                                     </div>
                                 </div>
                             </div>
@@ -216,9 +216,9 @@
                                 <div class="post-content">
                                     <h6 class="post-title">Meet the 12 boys rescued from cave</h6>
                                     <div class="post-meta d-flex justify-content-between">
-                                        <span><i class="fa fa-comments-o" aria-hidden="true"></i> 14</span>
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 34</span>
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</span>
+                                        <span><i class="far fa-comments" aria-hidden="true"></i> 14</span>
+                                        <span><i class="far fa-eye" aria-hidden="true"></i> 34</span>
+                                        <span><i class="far fa-thumbs-up" aria-hidden="true"></i> 84</span>
                                     </div>
                                 </div>
                             </div>
@@ -236,9 +236,9 @@
                                 <div class="post-content">
                                     <h6 class="post-title">Pogba dedicates France win to Thai cave boys</h6>
                                     <div class="post-meta d-flex justify-content-between">
-                                        <span><i class="fa fa-comments-o" aria-hidden="true"></i> 14</span>
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 34</span>
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</span>
+                                        <span><i class="far fa-comments" aria-hidden="true"></i> 14</span>
+                                        <span><i class="far fa-eye" aria-hidden="true"></i> 34</span>
+                                        <span><i class="far fa-thumbs-up" aria-hidden="true"></i> 84</span>
                                     </div>
                                 </div>
                             </div>
@@ -256,9 +256,9 @@
                                 <div class="post-content">
                                     <h6 class="post-title">How the world reacted to PM's Brexit crisis</h6>
                                     <div class="post-meta d-flex justify-content-between">
-                                        <span><i class="fa fa-comments-o" aria-hidden="true"></i> 24</span>
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 98</span>
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 63</span>
+                                        <span><i class="far fa-comments" aria-hidden="true"></i> 24</span>
+                                        <span><i class="far fa-eye" aria-hidden="true"></i> 98</span>
+                                        <span><i class="far fa-thumbs-up" aria-hidden="true"></i> 63</span>
                                     </div>
                                 </div>
                             </div>
@@ -276,9 +276,9 @@
                                 <div class="post-content">
                                     <h6 class="post-title">Meet the 12 boys rescued from cave</h6>
                                     <div class="post-meta d-flex justify-content-between">
-                                        <span><i class="fa fa-comments-o" aria-hidden="true"></i> 14</span>
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 34</span>
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</span>
+                                        <span><i class="far fa-comments" aria-hidden="true"></i> 14</span>
+                                        <span><i class="far fa-eye" aria-hidden="true"></i> 34</span>
+                                        <span><i class="far fa-thumbs-up" aria-hidden="true"></i> 84</span>
                                     </div>
                                 </div>
                             </div>
@@ -296,9 +296,9 @@
                                 <div class="post-content">
                                     <h6 class="post-title">How the world reacted to PM's Brexit crisis</h6>
                                     <div class="post-meta d-flex justify-content-between">
-                                        <span><i class="fa fa-comments-o" aria-hidden="true"></i> 24</span>
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 98</span>
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 63</span>
+                                        <span><i class="far fa-comments" aria-hidden="true"></i> 24</span>
+                                        <span><i class="far fa-eye" aria-hidden="true"></i> 98</span>
+                                        <span><i class="far fa-thumbs-up" aria-hidden="true"></i> 63</span>
                                     </div>
                                 </div>
                             </div>
@@ -316,9 +316,9 @@
                                 <div class="post-content">
                                     <h6 class="post-title">Meet the 12 boys rescued from cave</h6>
                                     <div class="post-meta d-flex justify-content-between">
-                                        <span><i class="fa fa-comments-o" aria-hidden="true"></i> 14</span>
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 34</span>
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</span>
+                                        <span><i class="far fa-comments" aria-hidden="true"></i> 14</span>
+                                        <span><i class="far fa-eye" aria-hidden="true"></i> 34</span>
+                                        <span><i class="far fa-thumbs-up" aria-hidden="true"></i> 84</span>
                                     </div>
                                 </div>
                             </div>
@@ -363,9 +363,9 @@
                         <a href="single-post.html" class="post-title">Warner Bros. Developing ‘The accountant’
                             Sequel</a>
                         <div class="post-meta d-flex">
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 22</a>
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 16</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 15</a>
+                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 22</a>
+                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 16</a>
+                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 15</a>
                         </div>
                     </div>
                 </div>
@@ -388,9 +388,9 @@
                         <a href="single-post.html" class="post-title">Searching for the 'angel' who held me on
                             Westminste Bridge</a>
                         <div class="post-meta d-flex">
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 28</a>
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 17</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
+                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 28</a>
+                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 17</a>
+                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
                         </div>
                     </div>
                 </div>
@@ -413,9 +413,9 @@
                         <a href="single-post.html" class="post-title">Love Island star's boyfriend found dead after her
                             funeral</a>
                         <div class="post-meta d-flex">
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
+                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
+                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 38</a>
+                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
                         </div>
                     </div>
                 </div>
@@ -453,9 +453,9 @@
                                 <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
                                     should be completed Thursday</a>
                                 <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
                                 </div>
                             </div>
 
@@ -476,9 +476,9 @@
                                 <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
                                     should be completed Thursday</a>
                                 <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
                                 </div>
                             </div>
 
@@ -505,9 +505,9 @@
                                     <a href="single-post.html" class="post-title">Searching for the 'angel' who held me
                                         on Westminste Bridge</a>
                                     <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 28</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 17</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
+                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 28</a>
+                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 17</a>
+                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
                                     </div>
                                 </div>
                             </div>
@@ -530,9 +530,9 @@
                                     <a href="single-post.html" class="post-title">Love Island star's boyfriend found
                                         dead after her funeral</a>
                                     <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
+                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
+                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 38</a>
+                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
                                     </div>
                                 </div>
                             </div>
@@ -565,9 +565,9 @@
                                         <a href="single-post.html" class="post-title">Searching for the 'angel' who held
                                             me on Westminster Bridge</a>
                                         <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
+                                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
+                                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 38</a>
+                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
                                         </div>
                                     </div>
                                 </div>
@@ -588,9 +588,9 @@
                                         <a href="single-post.html" class="post-title">Searching for the 'angel' who held
                                             me on Westminster Bridge</a>
                                         <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
+                                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
+                                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 38</a>
+                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
                                         </div>
                                     </div>
                                 </div>
@@ -622,9 +622,9 @@
                                         <a href="single-post.html" class="post-title">Full article Prince Charles's
                                             'urgent' global research</a>
                                         <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
+                                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
+                                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 38</a>
+                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
                                         </div>
                                     </div>
                                 </div>
@@ -645,9 +645,9 @@
                                         <a href="single-post.html" class="post-title">Full article Prince Charles's
                                             'urgent' global research</a>
                                         <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
+                                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
+                                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 38</a>
+                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
                                         </div>
                                     </div>
                                 </div>
@@ -666,9 +666,9 @@
                                     <a href="single-post.html" class="post-title">Epileptic boy's cannabis let through
                                         border</a>
                                     <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 16</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 26</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 17</a>
+                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 16</a>
+                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 26</a>
+                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 17</a>
                                     </div>
                                 </div>
                             </div>
@@ -684,9 +684,9 @@
                                     <a href="single-post.html" class="post-title">Paramedics 'drilled into boat death
                                         woman'</a>
                                     <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 16</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 26</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 17</a>
+                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 16</a>
+                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 26</a>
+                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 17</a>
                                     </div>
                                 </div>
                             </div>
@@ -702,9 +702,9 @@
                                     <a href="single-post.html" class="post-title">Tory vice-chairs quit over PM's Brexit
                                         plan</a>
                                     <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 16</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 26</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 17</a>
+                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 16</a>
+                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 26</a>
+                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 17</a>
                                     </div>
                                 </div>
                             </div>
@@ -720,9 +720,9 @@
                                     <a href="single-post.html" class="post-title">Do This One Simple Action for an
                                         Absolutely</a>
                                     <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 16</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 26</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 17</a>
+                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 16</a>
+                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 26</a>
+                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 17</a>
                                     </div>
                                 </div>
                             </div>
@@ -750,9 +750,9 @@
                                 <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
                                     should be completed Thursday</a>
                                 <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
                                 </div>
                             </div>
 
@@ -773,9 +773,9 @@
                                 <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
                                     should be completed Thursday</a>
                                 <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
                                 </div>
                             </div>
 
@@ -810,9 +810,9 @@
                                     <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id
                                         tristique sit amet, rutrum non ligula.</p>
                                     <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
+                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 32</a>
+                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 42</a>
+                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
                                     </div>
                                 </div>
                             </div>
@@ -845,9 +845,9 @@
                                     <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id
                                         tristique sit amet, rutrum non ligula.</p>
                                     <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
+                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 32</a>
+                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 42</a>
+                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
                                     </div>
                                 </div>
                             </div>
@@ -880,9 +880,9 @@
                                     <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id
                                         tristique sit amet, rutrum non ligula.</p>
                                     <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
+                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 32</a>
+                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 42</a>
+                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
                                     </div>
                                 </div>
                             </div>
@@ -915,9 +915,9 @@
                                     <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id
                                         tristique sit amet, rutrum non ligula.</p>
                                     <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
+                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 32</a>
+                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 42</a>
+                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
                                     </div>
                                 </div>
                             </div>
@@ -964,9 +964,9 @@
                                 <a href="single-post.html" class="post-title">Full article Prince Charles's 'urgent'
                                     global research</a>
                                 <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 38</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
                                 </div>
                             </div>
                         </div>
@@ -979,9 +979,9 @@
                             <div class="post-content">
                                 <a href="single-post.html" class="post-title">DC Shoes: gymkhana five; the making of</a>
                                 <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 29</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 08</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 23</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 29</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 08</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 23</a>
                                 </div>
                             </div>
                         </div>
@@ -994,9 +994,9 @@
                             <div class="post-content">
                                 <a href="single-post.html" class="post-title">Sweet Yummy Chocolatea Tea</a>
                                 <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 17</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 33</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 26</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 17</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 33</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 26</a>
                                 </div>
                             </div>
                         </div>
@@ -1009,9 +1009,9 @@
                             <div class="post-content">
                                 <a href="single-post.html" class="post-title">How To Make Orange Chicken Recipe?</a>
                                 <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 11</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 21</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 11</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 42</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 21</a>
                                 </div>
                             </div>
                         </div>
@@ -1126,9 +1126,9 @@
                             <div class="post-content">
                                 <a href="single-post.html" class="post-title">DC Shoes: gymkhana five; the making of</a>
                                 <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 34</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 84</a>
                                 </div>
                             </div>
                         </div>
@@ -1141,9 +1141,9 @@
                             <div class="post-content">
                                 <a href="single-post.html" class="post-title">How To Make Orange Chicken Recipe?</a>
                                 <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 34</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 84</a>
                                 </div>
                             </div>
                         </div>
@@ -1156,9 +1156,9 @@
                             <div class="post-content">
                                 <a href="single-post.html" class="post-title">Sweet Yummy Chocolate in the</a>
                                 <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 34</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 84</a>
                                 </div>
                             </div>
                         </div>
@@ -1171,9 +1171,9 @@
                             <div class="post-content">
                                 <a href="single-post.html" class="post-title">DC Shoes: gymkhana five; the making of</a>
                                 <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 34</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 84</a>
                                 </div>
                             </div>
                         </div>
@@ -1186,9 +1186,9 @@
                             <div class="post-content">
                                 <a href="single-post.html" class="post-title">How To Make Orange Chicken Recipe?</a>
                                 <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 34</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 84</a>
                                 </div>
                             </div>
                         </div>

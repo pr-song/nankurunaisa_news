@@ -54,7 +54,7 @@
                 <nav class="classy-navbar justify-content-between" id="vizewNav">
 
                     <!-- Nav brand -->
-                    <a href="{{ route('home') }}" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                    <a href="{{ route('app.home') }}" class="nav-brand"><img src="{!! asset('img/core-img/logo.png') !!}" alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -71,7 +71,7 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li class="active"><a href="{{ route('home') }}">Home</a></li>
+                                <li class="active"><a href="{{ route('app.home') }}">Home</a></li>
                                 <li><a href="archive-list.html">Archives</a></li>
                                 <li><a href="#">Pages</a>
                                     <ul class="dropdown">
@@ -129,7 +129,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="{{ route('contact') }}">Contact</a></li>
+                                <li><a href="{{ route('app.contact') }}">Contact</a></li>
                                 @if (Auth::check())
                                 <li><a href="#">
                                     @php 
@@ -137,14 +137,11 @@
                                         print reset($arr);
                                     @endphp</a>
                                     <ul class="dropdown">
-                                        <li><a href="index.html">- Home</a></li>
-                                        <li><a href="archive-list.html">- Archive List</a></li>
-                                        <li><a href="archive-grid.html">- Archive Grid</a></li>
-                                        <li><a href="single-post.html">- Single Post</a></li>
-                                        <li><a href="video-post.html">- Single Video Post</a></li>
-                                        <li><a href="contact.html">- Contact</a></li>
-                                        <li><a href="typography.html">- Typography</a></li>
-                                        <li><a href="{{ route('login') }}">- Login</a></li>
+                                        @if(Auth::user()->hasRole('administrator') || Auth::user()->hasRole('moderator'))
+                                            <li><a href="{{ route('manager.admin_dashboard') }}">Admin Dashboard</a></li>
+                                        @endif
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="{{ route('logout') }}">Logout</a></li>
                                     </ul>
                                 </li>
                                 @endif

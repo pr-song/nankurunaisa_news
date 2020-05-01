@@ -6,7 +6,7 @@
             <div class="col-12 col-sm-6 col-xl-3">
                 <div class="footer-widget mb-70">
                     <!-- Logo -->
-                    <a href="index.html" class="foo-logo d-block mb-4"><img src="img/core-img/logo2.png" alt=""></a>
+                    <a href="index.html" class="foo-logo d-block mb-4"><img src="{{ asset('img/core-img/logo2.png') }}" alt=""></a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
                     <!-- Footer Newsletter Area -->
                     <div class="footer-nl-area">
@@ -61,7 +61,7 @@
                     <!-- Single Blog Post -->
                     <div class="single-blog-post d-flex">
                         <div class="post-thumbnail">
-                            <img src="img/bg-img/1.jpg" alt="">
+                            <img src="{{ asset('img/bg-img/1.jpg') }}" alt="">
                         </div>
                         <div class="post-content">
                             <a href="single-post.html" class="post-title">DC Shoes: gymkhana the</a>
@@ -76,7 +76,7 @@
                     <!-- Single Blog Post -->
                     <div class="single-blog-post d-flex">
                         <div class="post-thumbnail">
-                            <img src="img/bg-img/2.jpg" alt="">
+                            <img src="{{ asset('img/bg-img/2.jpg') }}" alt="">
                         </div>
                         <div class="post-content">
                             <a href="single-post.html" class="post-title">Sweet Yummy Chocolatea Tea</a>
