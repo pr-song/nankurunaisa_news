@@ -27,8 +27,8 @@ class UsersController extends Controller
     public function update_user_role(EditUserRoleFormRequest $request, $id)
     {
         $user = User::whereId($id)->firstOrFail();
-        $user->syncRoles($request->get('role'));
+        $user->syncRoles($request->get('roles'));
 
-        return redirect(route('manager.edit_user_role', $user->id))->with('status', 'Role of user has been updated!');
+        return redirect(route('manager.edit_user_role', $user->id))->with('status', 'Role of user '.$user->name.' has been updated!');
     }
 }

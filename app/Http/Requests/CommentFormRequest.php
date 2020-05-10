@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class EditUserRoleFormRequest extends FormRequest
+class CommentFormRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,7 +24,8 @@ class EditUserRoleFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'roles' => 'required',
+            'content' => 'required',
+            'post_id' => 'required',
         ];
     }
 }

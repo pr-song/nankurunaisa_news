@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Redis;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,12 @@ Route::name('app.')->group(function(){
     Route::get('/', 'StaticPagesController@home')->name('home');
     Route::get('/about', 'StaticPagesController@about')->name('about');
     Route::get('/contact', 'StaticPagesController@contact')->name('contact');
+
+    /* ##### Post ##### */
+    Route::get('/posts/{slug?}', 'PostsController@show')->name('post_detail');
+
+    /* ##### Commnent ##### */
+    Route::post('/comment', 'CommentsController@newComment')->middleware('auth')->name('new_comment');
 });
 
 Auth::routes();
@@ -48,4 +55,11 @@ Route::name('manager.')->group(function(){
         Route::get('posts/create', 'PostsController@create')->name('new_post');
         Route::post('posts/create', 'PostsController@store');
     });
+});
+
+Route::get('/redis', function(){
+    $redis = Redis::connection();
+    $redis->set('key2', 'value2');
+
+    return $redis->get('key2');
 });

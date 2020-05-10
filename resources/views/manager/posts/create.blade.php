@@ -28,6 +28,9 @@
             <div class="col-12">
                 <div class="card card-outline card-info">
                     <div class="card-header">
+                        <a href="{{ route('manager.all_posts') }}" class="btn btn-sm btn-success">
+                            <li class="fas fa-list-alt"></li>&nbsp; All Posts
+                        </a>
                         <!-- tools box -->
                         <div class="card-tools">
                             <button type="button" class="btn btn-tool btn-sm" data-card-widget="collapse"
@@ -49,7 +52,7 @@
                                     placeholder="Post title">
                             </div>
                             <div class="form-group">
-                                <label>Category</label>
+                                <label>Categories</label>
                                 <select class="form-control select2" name="categories[]" multiple="multiple" data-placeholder="Select a category" style="width: 100%;">
                                     @foreach ($categories as $category)
                                         <option value="{{ $category->id }}">{{ $category->name }}</option>

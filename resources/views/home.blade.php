@@ -346,80 +346,37 @@
         </div>
 
         <div class="row">
-            <!-- Single Blog Post -->
-            <div class="col-12 col-md-4">
-                <div class="single-post-area mb-80">
-                    <!-- Post Thumbnail -->
-                    <div class="post-thumbnail">
-                        <img src="img/bg-img/11.jpg" alt="">
+            @foreach ($posts as $post)
+                <!-- Single Blog Post -->
+                <div class="col-12 col-md-4">
+                    <div class="single-post-area mb-80">
+                        <!-- Post Thumbnail -->
+                        <div class="post-thumbnail">
+                            <img src="img/bg-img/11.jpg" alt="">
 
-                        <!-- Video Duration -->
-                        <span class="video-duration">05.03</span>
-                    </div>
+                            <!-- Video Duration -->
+                            <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
+                        </div>
 
-                    <!-- Post Content -->
-                    <div class="post-content">
-                        <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                        <a href="single-post.html" class="post-title">Warner Bros. Developing ‘The accountant’
-                            Sequel</a>
-                        <div class="post-meta d-flex">
-                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 22</a>
-                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 16</a>
-                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 15</a>
+                        <!-- Post Content -->
+                        <div class="post-content">
+                            @foreach ($post->categories as $category)
+                                <a href="#" class="post-cata cata-sm cata-primary">                             
+                                    {{ $category->name }}                              
+                                </a>
+                            @endforeach
+                            <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title">
+                                {{ $post->title }}
+                            </a>
+                            <div class="post-meta d-flex">
+                                <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
+                                <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 16</a>
+                                <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 15</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Single Blog Post -->
-            <div class="col-12 col-md-4">
-                <div class="single-post-area mb-80">
-                    <!-- Post Thumbnail -->
-                    <div class="post-thumbnail">
-                        <img src="img/bg-img/12.jpg" alt="">
-
-                        <!-- Video Duration -->
-                        <span class="video-duration">05.03</span>
-                    </div>
-
-                    <!-- Post Content -->
-                    <div class="post-content">
-                        <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                        <a href="single-post.html" class="post-title">Searching for the 'angel' who held me on
-                            Westminste Bridge</a>
-                        <div class="post-meta d-flex">
-                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 28</a>
-                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 17</a>
-                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Blog Post -->
-            <div class="col-12 col-md-4">
-                <div class="single-post-area mb-80">
-                    <!-- Post Thumbnail -->
-                    <div class="post-thumbnail">
-                        <img src="img/bg-img/13.jpg" alt="">
-
-                        <!-- Video Duration -->
-                        <span class="video-duration">05.03</span>
-                    </div>
-
-                    <!-- Post Content -->
-                    <div class="post-content">
-                        <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                        <a href="single-post.html" class="post-title">Love Island star's boyfriend found dead after her
-                            funeral</a>
-                        <div class="post-meta d-flex">
-                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
-                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 38</a>
-                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
 
     </div>
@@ -932,11 +889,11 @@
 
                     <!-- ***** Single Widget ***** -->
                     <div class="single-widget followers-widget mb-50">
-                        <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i><span
+                        <a href="#" class="facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span
                                 class="counter">198</span><span>Fan</span></a>
-                        <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i><span
+                        <a href="#" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span
                                 class="counter">220</span><span>Followers</span></a>
-                        <a href="#" class="google"><i class="fa fa-google" aria-hidden="true"></i><span
+                        <a href="#" class="google"><i class="fab fa-google" aria-hidden="true"></i><span
                                 class="counter">140</span><span>Subscribe</span></a>
                     </div>
 

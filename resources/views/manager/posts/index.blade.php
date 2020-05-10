@@ -58,10 +58,10 @@
                                     <td>{{ $post->created_at }}</td>
                                     <td>
                                         <a href="#" class="btn btn-sm btn-secondary">
-                                            <li class="fas fa-cog"></li> Edit
+                                            <li class="fas fa-cog"></li>
                                         </a>
                                         <a href="#" class="btn btn-sm btn-danger">
-                                            <li class="fas fa-trash"></li> Delete
+                                            <li class="fas fa-trash"></li>
                                         </a>
                                     </td>
                                 </tr>
