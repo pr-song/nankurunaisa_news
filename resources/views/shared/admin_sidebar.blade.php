@@ -23,6 +23,7 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
                 <li class="nav-item has-treeview">
+                    <!-- Categories -->
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-list-alt"></i>
                         <p>
@@ -45,6 +46,7 @@
                         </li>
                     </ul>
                 </li>
+                <!-- Users -->
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
@@ -55,25 +57,20 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/charts/chartjs.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>ChartJS</p>
+                            <a href="{{ route('manager.all_users') }}" class="nav-link">
+                                <i class="fas fa-user-alt nav-icon"></i>
+                                <p>All Users</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/charts/flot.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Flot</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/inline.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Inline</p>
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-user-plus nav-icon"></i>
+                                <p>New User</p>
                             </a>
                         </li>
                     </ul>
                 </li>
+                <!-- Posts -->
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-file-alt"></i>
@@ -93,6 +90,30 @@
                             <a href="{{ route('manager.new_post') }}" class="nav-link">
                                 <i class="fas fa-plus nav-icon"></i>
                                 <p>New Post</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Roles -->
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-user-tag"></i>
+                        <p>
+                            Roles
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('manager.all_roles') }}" class="nav-link">
+                                <i class="fas fa-list-alt nav-icon"></i>
+                                <p>All Roles</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('manager.new_role') }}" class="nav-link">
+                                <i class="fas fa-plus nav-icon"></i>
+                                <p>New Role</p>
                             </a>
                         </li>
                     </ul>

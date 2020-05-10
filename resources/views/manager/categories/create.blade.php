@@ -25,21 +25,21 @@
 <section class="content">
     <div class="container-fluid">
         <!-- Horizontal Form -->
-        <div class="card card-info">
-            <div class="card-header">
-                <h3 class="card-title">New Category</h3>
-            </div>
+        <div class="card card-outline card-info">
             <!-- /.card-header -->
             <!-- form start -->
             <form class="form-horizontal" method="post">
                 @csrf
-                <div class="card-body">
+                <div class="card-header">
+                    <a href="{{ route('manager.all_categories') }}" class="btn btn-sm btn-success">
+                        <li class="fas fa-list-alt"></li>&nbsp; All Categories
+                    </a>
+                </div>
+                <div class="card-body"> 
                     <div class="form-group row">
-                        <label for="category-name" class="col-sm-2 col-form-label">Category Name</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="category-name" name="name"
-                                placeholder="Category name">
-                        </div>
+                        <label for="category-name">Category Name</label>
+                        <input type="text" class="form-control" id="category-name" name="name"
+                            placeholder="Category name">
                     </div>
                 </div>
                 <!-- /.card-body -->

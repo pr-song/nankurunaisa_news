@@ -49,8 +49,8 @@
                                     <td>{{ $category->name }}</td>
                                     <td>{{ $category->created_at }}</td>
                                     <td>
-                                        <a href="#" class="btn btn-sm btn-secondary"><li class="fas fa-cog"></li> Edit</a>
-                                        <a href="#" class="btn btn-sm btn-danger"><li class="fas fa-trash"></li> Delete</a>
+                                        <a href="#" class="btn btn-sm btn-secondary"><li class="fas fa-cog"></li></a>
+                                        <a href="#" class="btn btn-sm btn-danger"><li class="fas fa-trash"></li></a>
                                     </td>
                                 </tr>
                                 @endforeach

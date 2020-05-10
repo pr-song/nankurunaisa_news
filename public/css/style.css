@@ -1961,6 +1961,12 @@ input[type=password] {
   background-color: whitesmoke !important;
 }
 
+textarea {
+  font-size: 15px !important;
+  color: rgb(41,76,122) !important;
+  background-color: whitesmoke !important;
+}
+
 select:focus {
   background-color: whitesmoke !important;
 }

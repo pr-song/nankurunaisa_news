@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="{!! asset('plugins/icheck-bootstrap/icheck-bootstrap.min.css') !!}">
   <!-- Select -->
   <link rel="stylesheet" href="{!! asset('plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') !!}">
-  <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="{!! asset('plugins/select2/css/select2.min.css') !!}">
   <!-- JQVMap -->
   <link rel="stylesheet" href="{!! asset('plugins/jqvmap/jqvmap.min.css') !!}">
   <!-- Theme style -->

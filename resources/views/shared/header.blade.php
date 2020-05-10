@@ -140,8 +140,8 @@
                                     <ul class="dropdown">
                                         @if(Auth::user()->hasRole('administrator') || Auth::user()->hasRole('moderator'))
                                             <li><a href="{{ route('manager.admin_dashboard') }}">Admin Dashboard</a></li>
+                                            <div class="dropdown-divider"></div>
                                         @endif
-                                        <div class="dropdown-divider"></div>
                                         <li><a href="{{ route('logout') }}">Logout</a></li>
                                     </ul>
                                 </li>
