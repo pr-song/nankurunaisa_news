@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="post-details-thumb mb-50">
-                    <img src="img/bg-img/34.jpg" alt="">
+                    <img src="{{ asset('img/bg-img/34.jpg') }}" alt="">
                 </div>
             </div>
         </div>
@@ -24,9 +24,9 @@
                         <!-- Post Content -->
                         <div class="post-content mt-0">
                             @foreach ($post->categories as $category)
-                                <a href="#" class="post-cata cata-sm cata-primary">
-                                    {{ $category->name }}
-                                </a>
+                            <a href="#" class="post-cata cata-sm cata-primary">
+                                {{ $category->name }}
+                            </a>
                             @endforeach
                             <a href="single-post.html" class="post-title mb-2">{{ $post->title }}</a>
 
@@ -37,8 +37,9 @@
                                     <span class="post-date font-weight-bold">{{ $post->created_at }}</span>
                                 </div>
                                 <div class="post-meta d-flex">
-                                    <a href="#"><i class="fas fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
-                                    <a href="#"><i class="fas fa-eye" aria-hidden="true"></i> 42</a>
+                                    <a href="#"><i class="fas fa-comments" aria-hidden="true"></i>
+                                        {{ count($post->comments) }}</a>
+                                    <a href="#"><i class="fas fa-eye" aria-hidden="true"></i> {{ $post->page_views }}</a>
                                     <a href="#"><i class="fas fa-thumbs-up" aria-hidden="true"></i> 7</a>
                                 </div>
                             </div>
@@ -50,7 +51,7 @@
                         <div class="post-tags mt-30">
                             <ul>
                                 @foreach ($post->categories as $category)
-                                    <li><a href="#">{{ $category->name }}</a></li>
+                                <li><a href="#">{{ $category->name }}</a></li>
                                 @endforeach
                             </ul>
                         </div>
@@ -70,6 +71,7 @@
                             </div>
                         </div>
 
+                        @if($related_posts->isNotEmpty())
                         <!-- Related Post Area -->
                         <div class="related-post-area mt-5">
                             <!-- Section Title -->
@@ -77,140 +79,153 @@
                                 <h4>Related Post</h4>
                                 <div class="line"></div>
                             </div>
-
                             <div class="row">
                                 @foreach ($related_posts as $related_post)
-                                    <!-- Single Blog Post -->
-                                    <div class="col-12 col-md-6">
-                                        <div class="single-post-area mb-50">
-                                            <!-- Post Thumbnail -->
-                                            <div class="post-thumbnail">
-                                                <img src="{{ asset('img/bg-img/11.jpg') }}" alt="">
+                                <!-- Single Blog Post -->
+                                <div class="col-12 col-md-6">
+                                    <div class="single-post-area mb-50">
+                                        <!-- Post Thumbnail -->
+                                        <div class="post-thumbnail">
+                                            <img src="{{ asset('img/bg-img/11.jpg') }}" alt="">
 
-                                                <!-- Video Duration -->
-                                                <span class="video-duration">05.03</span>
-                                            </div>
+                                            <!-- Video Duration -->
+                                            <span
+                                                class="video-duration">{{ $related_post->created_at->toDateString() }}</span>
+                                        </div>
 
-                                            <!-- Post Content -->
-                                            <div class="post-content">
-                                                <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                                <a href="single-post.html" class="post-title">
-                                                    {{ $related_post->title }}
-                                                </a>
-                                                <div class="post-meta d-flex">
-                                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 22</a>
-                                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 16</a>
-                                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 15</a>
-                                                </div>
+                                        <!-- Post Content -->
+                                        <div class="post-content">
+                                            @foreach ($related_post->categories as $category)
+                                            <a href="#" class="post-cata cata-sm cata-success">
+                                                {{ $category->name }}
+                                            </a>
+                                            @endforeach
+                                            <a href="single-post.html" class="post-title">
+                                                {{ $related_post->title }}
+                                            </a>
+                                            <div class="post-meta d-flex">
+                                                <a href="#"><i class="fas fa-comments" aria-hidden="true"></i>
+                                                    {{ count($related_post->comments)}}</a>
+                                                <a href="#"><i class="fas fa-eye" aria-hidden="true"></i> 16</a>
+                                                <a href="#"><i class="fas fa-thumbs-up" aria-hidden="true"></i> 15</a>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                                 @endforeach
                             </div>
                         </div>
+                    </div>
+                    @endif
 
-                        <!-- Comment Area Start -->
-                        <div class="comment_area clearfix mb-50">
+                    <!-- Comment Area Start -->
+                    <div class="comment_area clearfix mb-50">
 
-                            <!-- Section Title -->
-                            <div class="section-heading style-2">
-                                <h4>Comment</h4>
-                                <div class="line"></div>
-                            </div>
-
-                            <ul>
-                                @foreach ($post->comments as $comment)
-                                    <!-- Single Comment Area -->
-                                    <li class="single_comment_area">
-                                        <!-- Comment Content -->
-                                        <div class="comment-content d-flex">
-                                            <!-- Comment Author -->
-                                            <div class="comment-author">
-                                                <img src="{{ asset('img/bg-img/31.jpg') }}" alt="author">
-                                            </div>
-                                            <!-- Comment Meta -->
-                                            <div class="comment-meta">
-                                                <a href="#" class="comment-date">{{ $comment->created_at }}</a>
-                                                <h6>{{ App\Models\User::find($comment->user_id)->name }}</h6>
-                                                <p>{{ $comment->content }}</p>
-                                                <div class="d-flex align-items-center">
-                                                    <a href="#" class="like">like</a>
-                                                    <a href="#" class="reply">Reply</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                @endforeach
-                            </ul>
+                        <!-- Section Title -->
+                        <div class="section-heading style-2">
+                            <h4>Comment</h4>
+                            <div class="line"></div>
                         </div>
 
-                        <!-- Post A Comment Area -->
-                        <div class="post-a-comment-area">
-
-                            <!-- Section Title -->
-                            <div class="section-heading style-2">
-                                <h4>Leave a reply</h4>
-                                <div class="line"></div>
-                            </div>
-
-                            <!-- Reply Form -->
-                            <div class="contact-form-area">
-                                <form action="{{ route('app.new_comment') }}" method="post">
-                                    @csrf
-                                    <div class="row">
-                                        <input type="hidden" class="form-control" id="user" name="user_id" value="@if(Auth::check()) {{ Auth::user()->id }} @endif">
-                                        <input type="hidden" class="form-control" id="post" name="post_id" value="{{ $post->id }}">
-                                        <div class="col-12">
-                                            <textarea name="content" class="form-control" id="message"
-                                                placeholder="Your comment"></textarea>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="btn vizew-btn mt-30" type="submit">Submit Comment</button>
+                        <ul>
+                            @foreach ($post->comments as $comment)
+                            <!-- Single Comment Area -->
+                            <li class="single_comment_area">
+                                <!-- Comment Content -->
+                                <div class="comment-content d-flex">
+                                    <!-- Comment Author -->
+                                    <div class="comment-author">
+                                        <img src="{{ asset('img/bg-img/31.jpg') }}" alt="author">
+                                    </div>
+                                    <!-- Comment Meta -->
+                                    <div class="comment-meta">
+                                        <a href="#" class="comment-date">{{ $comment->created_at }}</a>
+                                        <h6>{{ App\Models\User::find($comment->user_id)->name }}</h6>
+                                        <p>{{ $comment->content }}</p>
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" class="like">like</a>
+                                            <a href="#" class="reply">Reply</a>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
+                                </div>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
+
+                    <!-- Post A Comment Area -->
+                    <div class="post-a-comment-area">
+
+                        <!-- Section Title -->
+                        <div class="section-heading style-2">
+                            <h4>Leave a reply</h4>
+                            <div class="line"></div>
                         </div>
 
+                        <!-- Reply Form -->
+                        <div class="contact-form-area">
+                            <form action="{{ route('app.new_comment') }}" method="post">
+                                @csrf
+                                <div class="row">
+                                    <input type="hidden" class="form-control" id="user" name="user_id"
+                                        value="@if(Auth::check()) {{ Auth::user()->id }} @endif">
+                                    <input type="hidden" class="form-control" id="post" name="post_id"
+                                        value="{{ $post->id }}">
+                                    <div class="col-12">
+                                        <textarea name="content" class="form-control" id="message"
+                                            placeholder="Your comment"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn vizew-btn mt-30" type="submit">Submit Comment</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Widget -->
+        @if (Auth::check())
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="sidebar-area">
+
+                <!-- ***** Single Widget ***** -->
+                <div class="single-widget share-post-widget mb-50">
+                    <p>Share This Post</p>
+                    <a href="#" class="facebook"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a>
+                    <a href="#" class="google"><i class="fab fa-google" aria-hidden="true"></i> Google+</a>
+                </div>
+
+                <!-- ***** Single Widget ***** -->
+                <div class="single-widget p-0 author-widget">
+                    <div class="p-4">
+                        <img class="author-avatar" src="{{ asset('img/bg-img/30.jpg') }}" alt="">
+                        <a href="#" class="author-name">{{ Auth::user()->name }}</a>
+                        <div class="author-social-info">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    </div>
+
+                    <div class="authors--meta-data d-flex">
+                        <p>Posted<span
+                                class="counter">{{ App\Models\Post::where('user_id', Auth::user()->id)->count() }}</span>
+                        </p>
+                        <p>Comments<span
+                                class="counter">{{ App\Models\Comment::where('user_id', Auth::user()->id)->count() }}</span>
+                        </p>
                     </div>
                 </div>
             </div>
-
-            <!-- Sidebar Widget -->
-            @if (Auth::check())
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div class="sidebar-area">
-
-                        <!-- ***** Single Widget ***** -->
-                        <div class="single-widget share-post-widget mb-50">
-                            <p>Share This Post</p>
-                            <a href="#" class="facebook"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
-                            <a href="#" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a>
-                            <a href="#" class="google"><i class="fab fa-google" aria-hidden="true"></i> Google+</a>
-                        </div>
-
-                        <!-- ***** Single Widget ***** -->
-                        <div class="single-widget p-0 author-widget">
-                            <div class="p-4">
-                                <img class="author-avatar" src="{{ asset('img/bg-img/30.jpg') }}" alt="">
-                                <a href="#" class="author-name">{{ Auth::user()->name }}</a>
-                                <div class="author-social-info">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                            </div>
-
-                            <div class="authors--meta-data d-flex">
-                                <p>Posted<span class="counter">{{ App\Models\Post::where('user_id', Auth::user()->id)->count() }}</span></p>
-                                <p>Comments<span class="counter">{{ App\Models\Comment::where('user_id', Auth::user()->id)->count() }}</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            @endif
         </div>
+        @endif
+    </div>
     </div>
 </section>
 <!-- ##### Post Details Area End ##### -->

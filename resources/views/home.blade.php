@@ -332,21 +332,21 @@
 </section>
 <!-- ##### Hero Area End ##### -->
 
-<!-- ##### Trending Posts Area Start ##### -->
+<!-- ##### Trending News Area Start ##### -->
 <section class="trending-posts-area">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <!-- Section Heading -->
                 <div class="section-heading">
-                    <h4>Trending Videos</h4>
+                    <h4>Trending News</h4>
                     <div class="line"></div>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            @foreach ($posts as $post)
+            @foreach ($trending_posts as $post)
                 <!-- Single Blog Post -->
                 <div class="col-12 col-md-4">
                     <div class="single-post-area mb-80">
@@ -370,7 +370,9 @@
                             </a>
                             <div class="post-meta d-flex">
                                 <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
-                                <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 16</a>
+                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 
+                                {{ $post->page_views }}
+                            </a>
                                 <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 15</a>
                             </div>
                         </div>
@@ -381,7 +383,7 @@
 
     </div>
 </section>
-<!-- ##### Trending Posts Area End ##### -->
+<!-- ##### Trending News Area End ##### -->
 
 <!-- ##### Vizew Post Area Start ##### -->
 <section class="vizew-post-area mb-50">
@@ -391,7 +393,7 @@
                 <div class="all-posts-area">
                     <!-- Section Heading -->
                     <div class="section-heading style-2">
-                        <h4>Featured Videos</h4>
+                        <h4>Featured News</h4>
                         <div class="line"></div>
                     </div>
 
@@ -500,114 +502,156 @@
                         <div class="col-12 col-lg-6">
                             <!-- Section Heading -->
                             <div class="section-heading style-2">
-                                <h4>Sport Videos</h4>
+                                <h4>Sport</h4>
                                 <div class="line"></div>
                             </div>
 
                             <!-- Sports Video Slides -->
                             <div class="sport-video-slides owl-carousel mb-50">
-                                <!-- Single Blog Post -->
-                                <div class="single-post-area">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="img/bg-img/15.jpg" alt="">
+                                @foreach ($sport as $sport_posts)
+                                    @foreach($sport_posts->posts->reverse() as $post)
+                                        <!-- Single Blog Post -->
+                                        <div class="single-post-area">
+                                            <!-- Post Thumbnail -->
+                                            <div class="post-thumbnail">
+                                                <img src="{{ asset('img/bg-img/15.jpg') }}" alt="">
 
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
-                                    </div>
+                                                <!-- Video Duration -->
+                                                <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
+                                            </div>
 
-                                    <!-- Post Content -->
-                                    <div class="post-content">
-                                        <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                        <a href="single-post.html" class="post-title">Searching for the 'angel' who held
-                                            me on Westminster Bridge</a>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
-                                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 38</a>
-                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
+                                            <!-- Post Content -->
+                                            <div class="post-content">
+                                                <a href="#" class="post-cata cata-sm cata-success">{{ $sport_posts->name }}</a>
+                                                <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title">{{ $post->title }}</a>
+                                                <div class="post-meta d-flex">
+                                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
+                                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 
+                                                        {{ $post->page_views }}
+                                                    </a>
+                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <!-- Single Blog Post -->
-                                <div class="single-post-area">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="img/bg-img/13.jpg" alt="">
-
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
-                                    </div>
-
-                                    <!-- Post Content -->
-                                    <div class="post-content">
-                                        <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                        <a href="single-post.html" class="post-title">Searching for the 'angel' who held
-                                            me on Westminster Bridge</a>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
-                                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 38</a>
-                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                    @endforeach
+                                @endforeach
                             </div>
                         </div>
 
                         <div class="col-12 col-lg-6">
                             <!-- Section Heading -->
                             <div class="section-heading style-2">
-                                <h4>Business Videos</h4>
+                                <h4>Business</h4>
                                 <div class="line"></div>
                             </div>
 
                             <!-- Business Video Slides -->
                             <div class="business-video-slides owl-carousel mb-50">
+                                @foreach ($business as $business_posts)
+                                    @foreach($business_posts->posts->reverse() as $post)
                                 <!-- Single Blog Post -->
-                                <div class="single-post-area">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="img/bg-img/17.jpg" alt="">
+                                        <div class="single-post-area">
+                                            <!-- Post Thumbnail -->
+                                            <div class="post-thumbnail">
+                                                <img src="{{ asset('img/bg-img/17.jpg') }}" alt="">
 
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
-                                    </div>
+                                                <!-- Video Duration -->
+                                                <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
+                                            </div>
 
-                                    <!-- Post Content -->
-                                    <div class="post-content">
-                                        <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                        <a href="single-post.html" class="post-title">Full article Prince Charles's
-                                            'urgent' global research</a>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
-                                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 38</a>
-                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
+                                            <!-- Post Content -->
+                                            <div class="post-content">
+                                                <a href="#" class="post-cata cata-sm cata-primary">{{ $business_posts->name }}</a>
+                                                <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title">{{ $post->title }}</a>
+                                                <div class="post-meta d-flex">
+                                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
+                                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 
+                                                        {{ $post->page_views }}
+                                                    </a>
+                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    @endforeach
+                                @endforeach
+                            </div>
+                        </div>
 
+                        <div class="col-12 col-lg-6">
+                            <!-- Section Heading -->
+                            <div class="section-heading style-2">
+                                <h4>Education</h4>
+                                <div class="line"></div>
+                            </div>
+
+                            <!-- Business Video Slides -->
+                            <div class="business-video-slides owl-carousel mb-50">
+                                @foreach ($education as $education_posts)
+                                    @foreach($education_posts->posts->reverse() as $post)
                                 <!-- Single Blog Post -->
-                                <div class="single-post-area">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="img/bg-img/13.jpg" alt="">
+                                        <div class="single-post-area">
+                                            <!-- Post Thumbnail -->
+                                            <div class="post-thumbnail">
+                                                <img src="{{ asset('img/bg-img/12.jpg') }}" alt="">
 
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
-                                    </div>
+                                                <!-- Video Duration -->
+                                                <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
+                                            </div>
 
-                                    <!-- Post Content -->
-                                    <div class="post-content">
-                                        <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                        <a href="single-post.html" class="post-title">Full article Prince Charles's
-                                            'urgent' global research</a>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
-                                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 38</a>
-                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
+                                            <!-- Post Content -->
+                                            <div class="post-content">
+                                                <a href="#" class="post-cata cata-sm cata-primary">{{ $education_posts->name }}</a>
+                                                <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title">{{ $post->title }}</a>
+                                                <div class="post-meta d-flex">
+                                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
+                                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 
+                                                        {{ $post->page_views }}
+                                                    </a>
+                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    @endforeach
+                                @endforeach
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6">
+                            <!-- Section Heading -->
+                            <div class="section-heading style-2">
+                                <h4>Travel</h4>
+                                <div class="line"></div>
+                            </div>
+
+                            <!-- Business Video Slides -->
+                            <div class="business-video-slides owl-carousel mb-50">
+                                @foreach ($travel as $travel_posts)
+                                    @foreach($travel_posts->posts->reverse() as $post)
+                                <!-- Single Blog Post -->
+                                        <div class="single-post-area">
+                                            <!-- Post Thumbnail -->
+                                            <div class="post-thumbnail">
+                                                <img src="{{ asset('img/bg-img/46.jpg') }}" alt="">
+
+                                                <!-- Video Duration -->
+                                                <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
+                                            </div>
+
+                                            <!-- Post Content -->
+                                            <div class="post-content">
+                                                <a href="#" class="post-cata cata-sm cata-danger">{{ $travel_posts->name }}</a>
+                                                <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title">{{ $post->title }}</a>
+                                                <div class="post-meta d-flex">
+                                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
+                                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 
+                                                        {{ $post->page_views }}
+                                                    </a>
+                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -901,7 +945,7 @@
                     <div class="single-widget latest-video-widget mb-50">
                         <!-- Section Heading -->
                         <div class="section-heading style-2 mb-30">
-                            <h4>Latest Video</h4>
+                            <h4>Latest Posts</h4>
                             <div class="line"></div>
                         </div>
 

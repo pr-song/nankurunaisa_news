@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Redis;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,11 +54,4 @@ Route::name('manager.')->group(function(){
         Route::get('posts/create', 'PostsController@create')->name('new_post');
         Route::post('posts/create', 'PostsController@store');
     });
-});
-
-Route::get('/redis', function(){
-    $redis = Redis::connection();
-    $redis->set('key2', 'value2');
-
-    return $redis->get('key2');
 });
