@@ -56,6 +56,7 @@
                     <!-- Nav brand -->
                     <a href="{{ route('app.home') }}" class="nav-brand"><img src="{!! asset('img/core-img/logo.png') !!}" alt=""></a>
 
+
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
                         <span class="navbarToggler"><span></span><span></span><span></span></span>
