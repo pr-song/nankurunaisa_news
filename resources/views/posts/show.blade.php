@@ -39,7 +39,8 @@
                                 <div class="post-meta d-flex">
                                     <a href="#"><i class="fas fa-comments" aria-hidden="true"></i>
                                         {{ count($post->comments) }}</a>
-                                    <a href="#"><i class="fas fa-eye" aria-hidden="true"></i> {{ $post->page_views }}</a>
+                                    <a href="#"><i class="fas fa-eye" aria-hidden="true"></i>
+                                        {{ $post->page_views }}</a>
                                     <a href="#"><i class="fas fa-thumbs-up" aria-hidden="true"></i> 7</a>
                                 </div>
                             </div>
@@ -115,8 +116,8 @@
                                 @endforeach
                             </div>
                         </div>
+                        @endif
                     </div>
-                    @endif
 
                     <!-- Comment Area Start -->
                     <div class="comment_area clearfix mb-50">
@@ -185,47 +186,43 @@
 
                 </div>
             </div>
-        </div>
+            <!-- Sidebar Widget -->
+            @if (Auth::check())
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="sidebar-area">
 
-        <!-- Sidebar Widget -->
-        @if (Auth::check())
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <div class="sidebar-area">
-
-                <!-- ***** Single Widget ***** -->
-                <div class="single-widget share-post-widget mb-50">
-                    <p>Share This Post</p>
-                    <a href="#" class="facebook"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
-                    <a href="#" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a>
-                    <a href="#" class="google"><i class="fab fa-google" aria-hidden="true"></i> Google+</a>
-                </div>
-
-                <!-- ***** Single Widget ***** -->
-                <div class="single-widget p-0 author-widget">
-                    <div class="p-4">
-                        <img class="author-avatar" src="{{ asset('img/bg-img/30.jpg') }}" alt="">
-                        <a href="#" class="author-name">{{ Auth::user()->name }}</a>
-                        <div class="author-social-info">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <!-- ***** Single Widget ***** -->
+                    <div class="single-widget share-post-widget mb-50">
+                        <p>Share This Post</p>
+                        <a href="#" class="facebook"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
+                        <a href="#" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a>
+                        <a href="#" class="google"><i class="fab fa-google" aria-hidden="true"></i> Google+</a>
                     </div>
 
-                    <div class="authors--meta-data d-flex">
-                        <p>Posted<span
-                                class="counter">{{ App\Models\Post::where('user_id', Auth::user()->id)->count() }}</span>
-                        </p>
-                        <p>Comments<span
-                                class="counter">{{ App\Models\Comment::where('user_id', Auth::user()->id)->count() }}</span>
-                        </p>
+                    <!-- ***** Single Widget ***** -->
+                    <div class="single-widget p-0 author-widget">
+                        <div class="p-4">
+                            <img class="author-avatar" src="{{ asset('img/bg-img/30.jpg') }}" alt="">
+                            <a href="#" class="author-name">{{ Auth::user()->name }}</a>
+                            <div class="author-social-info">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        </div>
+
+                        <div class="authors--meta-data d-flex">
+                            <p>Posted<span class="counter">{{ App\Models\Post::where('user_id', Auth::user()->id)->count() }}</span>
+                            </p>
+                            <p>Comments<span class="counter">{{ App\Models\Comment::where('user_id', Auth::user()->id)->count() }}</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
+            @endif
         </div>
-        @endif
-    </div>
     </div>
 </section>
 <!-- ##### Post Details Area End ##### -->

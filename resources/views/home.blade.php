@@ -347,37 +347,38 @@
 
         <div class="row">
             @foreach ($trending_posts as $post)
-                <!-- Single Blog Post -->
-                <div class="col-12 col-md-4">
-                    <div class="single-post-area mb-80">
-                        <!-- Post Thumbnail -->
-                        <div class="post-thumbnail">
-                            <img src="img/bg-img/11.jpg" alt="">
+            <!-- Single Blog Post -->
+            <div class="col-12 col-md-4">
+                <div class="single-post-area mb-80">
+                    <!-- Post Thumbnail -->
+                    <div class="post-thumbnail">
+                        <img src="img/bg-img/11.jpg" alt="">
 
-                            <!-- Video Duration -->
-                            <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
-                        </div>
+                        <!-- Video Duration -->
+                        <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
+                    </div>
 
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            @foreach ($post->categories as $category)
-                                <a href="#" class="post-cata cata-sm cata-primary">                             
-                                    {{ $category->name }}                              
-                                </a>
-                            @endforeach
-                            <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title">
-                                {{ $post->title }}
-                            </a>
-                            <div class="post-meta d-flex">
-                                <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
-                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 
+                    <!-- Post Content -->
+                    <div class="post-content">
+                        @foreach ($post->categories as $category)
+                        <a href="#" class="post-cata cata-sm cata-primary">
+                            {{ $category->name }}
+                        </a>
+                        @endforeach
+                        <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title">
+                            {{ $post->title }}
+                        </a>
+                        <div class="post-meta d-flex">
+                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i>
+                                {{ count($post->comments) }}</a>
+                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i>
                                 {{ $post->page_views }}
                             </a>
-                                <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 15</a>
-                            </div>
+                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 15</a>
                         </div>
                     </div>
                 </div>
+            </div>
             @endforeach
         </div>
 
@@ -509,31 +510,33 @@
                             <!-- Sports Video Slides -->
                             <div class="sport-video-slides owl-carousel mb-50">
                                 @foreach ($sport as $sport_posts)
-                                    @foreach($sport_posts->posts->reverse() as $post)
-                                        <!-- Single Blog Post -->
-                                        <div class="single-post-area">
-                                            <!-- Post Thumbnail -->
-                                            <div class="post-thumbnail">
-                                                <img src="{{ asset('img/bg-img/15.jpg') }}" alt="">
+                                @foreach($sport_posts->posts->reverse() as $post)
+                                <!-- Single Blog Post -->
+                                <div class="single-post-area">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="{{ asset('img/bg-img/15.jpg') }}" alt="">
 
-                                                <!-- Video Duration -->
-                                                <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
-                                            </div>
+                                        <!-- Video Duration -->
+                                        <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
+                                    </div>
 
-                                            <!-- Post Content -->
-                                            <div class="post-content">
-                                                <a href="#" class="post-cata cata-sm cata-success">{{ $sport_posts->name }}</a>
-                                                <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title">{{ $post->title }}</a>
-                                                <div class="post-meta d-flex">
-                                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
-                                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 
-                                                        {{ $post->page_views }}
-                                                    </a>
-                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
-                                                </div>
-                                            </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-cata cata-sm cata-success">{{ $sport_posts->name }}</a>
+                                        <a href="{{ route('app.post_detail', $post->slug) }}"
+                                            class="post-title">{{ $post->title }}</a>
+                                        <div class="post-meta d-flex">
+                                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i>
+                                                {{ count($post->comments) }}</a>
+                                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i>
+                                                {{ $post->page_views }}
+                                            </a>
+                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
                                         </div>
-                                    @endforeach
+                                    </div>
+                                </div>
+                                @endforeach
                                 @endforeach
                             </div>
                         </div>
@@ -548,31 +551,34 @@
                             <!-- Business Video Slides -->
                             <div class="business-video-slides owl-carousel mb-50">
                                 @foreach ($business as $business_posts)
-                                    @foreach($business_posts->posts->reverse() as $post)
+                                @foreach($business_posts->posts->reverse() as $post)
                                 <!-- Single Blog Post -->
-                                        <div class="single-post-area">
-                                            <!-- Post Thumbnail -->
-                                            <div class="post-thumbnail">
-                                                <img src="{{ asset('img/bg-img/17.jpg') }}" alt="">
+                                <div class="single-post-area">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="{{ asset('img/bg-img/17.jpg') }}" alt="">
 
-                                                <!-- Video Duration -->
-                                                <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
-                                            </div>
+                                        <!-- Video Duration -->
+                                        <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
+                                    </div>
 
-                                            <!-- Post Content -->
-                                            <div class="post-content">
-                                                <a href="#" class="post-cata cata-sm cata-primary">{{ $business_posts->name }}</a>
-                                                <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title">{{ $post->title }}</a>
-                                                <div class="post-meta d-flex">
-                                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
-                                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 
-                                                        {{ $post->page_views }}
-                                                    </a>
-                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
-                                                </div>
-                                            </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#"
+                                            class="post-cata cata-sm cata-primary">{{ $business_posts->name }}</a>
+                                        <a href="{{ route('app.post_detail', $post->slug) }}"
+                                            class="post-title">{{ $post->title }}</a>
+                                        <div class="post-meta d-flex">
+                                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i>
+                                                {{ count($post->comments) }}</a>
+                                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i>
+                                                {{ $post->page_views }}
+                                            </a>
+                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
                                         </div>
-                                    @endforeach
+                                    </div>
+                                </div>
+                                @endforeach
                                 @endforeach
                             </div>
                         </div>
@@ -587,31 +593,34 @@
                             <!-- Business Video Slides -->
                             <div class="business-video-slides owl-carousel mb-50">
                                 @foreach ($education as $education_posts)
-                                    @foreach($education_posts->posts->reverse() as $post)
+                                @foreach($education_posts->posts->reverse() as $post)
                                 <!-- Single Blog Post -->
-                                        <div class="single-post-area">
-                                            <!-- Post Thumbnail -->
-                                            <div class="post-thumbnail">
-                                                <img src="{{ asset('img/bg-img/12.jpg') }}" alt="">
+                                <div class="single-post-area">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="{{ asset('img/bg-img/12.jpg') }}" alt="">
 
-                                                <!-- Video Duration -->
-                                                <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
-                                            </div>
+                                        <!-- Video Duration -->
+                                        <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
+                                    </div>
 
-                                            <!-- Post Content -->
-                                            <div class="post-content">
-                                                <a href="#" class="post-cata cata-sm cata-primary">{{ $education_posts->name }}</a>
-                                                <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title">{{ $post->title }}</a>
-                                                <div class="post-meta d-flex">
-                                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
-                                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 
-                                                        {{ $post->page_views }}
-                                                    </a>
-                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
-                                                </div>
-                                            </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#"
+                                            class="post-cata cata-sm cata-primary">{{ $education_posts->name }}</a>
+                                        <a href="{{ route('app.post_detail', $post->slug) }}"
+                                            class="post-title">{{ $post->title }}</a>
+                                        <div class="post-meta d-flex">
+                                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i>
+                                                {{ count($post->comments) }}</a>
+                                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i>
+                                                {{ $post->page_views }}
+                                            </a>
+                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
                                         </div>
-                                    @endforeach
+                                    </div>
+                                </div>
+                                @endforeach
                                 @endforeach
                             </div>
                         </div>
@@ -626,31 +635,33 @@
                             <!-- Business Video Slides -->
                             <div class="business-video-slides owl-carousel mb-50">
                                 @foreach ($travel as $travel_posts)
-                                    @foreach($travel_posts->posts->reverse() as $post)
+                                @foreach($travel_posts->posts->reverse() as $post)
                                 <!-- Single Blog Post -->
-                                        <div class="single-post-area">
-                                            <!-- Post Thumbnail -->
-                                            <div class="post-thumbnail">
-                                                <img src="{{ asset('img/bg-img/46.jpg') }}" alt="">
+                                <div class="single-post-area">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="{{ asset('img/bg-img/46.jpg') }}" alt="">
 
-                                                <!-- Video Duration -->
-                                                <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
-                                            </div>
+                                        <!-- Video Duration -->
+                                        <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
+                                    </div>
 
-                                            <!-- Post Content -->
-                                            <div class="post-content">
-                                                <a href="#" class="post-cata cata-sm cata-danger">{{ $travel_posts->name }}</a>
-                                                <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title">{{ $post->title }}</a>
-                                                <div class="post-meta d-flex">
-                                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
-                                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 
-                                                        {{ $post->page_views }}
-                                                    </a>
-                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
-                                                </div>
-                                            </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-cata cata-sm cata-danger">{{ $travel_posts->name }}</a>
+                                        <a href="{{ route('app.post_detail', $post->slug) }}"
+                                            class="post-title">{{ $post->title }}</a>
+                                        <div class="post-meta d-flex">
+                                            <a href="#"><i class="far fa-comments" aria-hidden="true"></i>
+                                                {{ count($post->comments) }}</a>
+                                            <a href="#"><i class="far fa-eye" aria-hidden="true"></i>
+                                                {{ $post->page_views }}
+                                            </a>
+                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
                                         </div>
-                                    @endforeach
+                                    </div>
+                                </div>
+                                @endforeach
                                 @endforeach
                             </div>
                         </div>
@@ -738,193 +749,177 @@
 
                     <!-- Featured Post Slides -->
                     <div class="featured-post-slides owl-carousel mb-30">
+                        @foreach ($lated_posts as $post)
+
                         <!-- Single Feature Post -->
                         <div class="single-feature-post video-post bg-img"
                             style="background-image: url(img/bg-img/14.jpg);">
                             <!-- Play Button -->
-                            <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
-                                    aria-hidden="true"></i></a>
-
                             <!-- Post Content -->
                             <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
-                                    should be completed Thursday</a>
+                                @foreach ($post->categories as $category)
+                                <a href="#" class="post-cata">
+                                    {{ $category->name }}
+
+                                </a>
+                                @endforeach
+                                <a href="single-post.html" class="post-title">{{ $post->title }}</a>
                                 <div class="post-meta d-flex">
-                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i>
+                                        {{ $post->comments->count() }}</a>
+                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i>
+                                        {{ $post->page_views }}</a>
                                     <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
                                 </div>
                             </div>
 
                             <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
+                            <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
                         </div>
-
-                        <!-- Single Feature Post -->
-                        <div class="single-feature-post video-post bg-img"
-                            style="background-image: url(img/bg-img/7.jpg);">
-                            <!-- Play Button -->
-                            <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
-                                    aria-hidden="true"></i></a>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
-                                    should be completed Thursday</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
-                                </div>
-                            </div>
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
+                        @endforeach
                     </div>
 
-                    <!-- Single Post Area -->
-                    <div class="single-post-area mb-30">
-                        <div class="row align-items-center">
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/21.jpg" alt="">
+                    <!-- Single Game Post Area -->
+                    @foreach ($game as $game_posts)
+                        @foreach ($game_posts->posts as $post)
+                             @if($loop->first)
 
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Content -->
-                                <div class="post-content mt-0">
-                                    <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                    <a href="single-post.html" class="post-title mb-2">May fights on after Johnson
-                                        savages Brexit approach</a>
-                                    <div class="post-meta d-flex align-items-center mb-2">
-                                        <a href="#" class="post-author">By Jane</a>
-                                        <i class="fa fa-circle" aria-hidden="true"></i>
-                                        <a href="#" class="post-date">Sep 08, 2018</a>
-                                    </div>
-                                    <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id
-                                        tristique sit amet, rutrum non ligula.</p>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 32</a>
-                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 42</a>
-                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                <div class="single-post-area mb-30">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Post Thumbnail -->
+                                            <div class="post-thumbnail">
+                                                <img src="{{ asset('img/bg-img/21.jpg') }}" alt="">
 
-                    <!-- Single Post Area -->
-                    <div class="single-post-area mb-30">
-                        <div class="row align-items-center">
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/22.jpg" alt="">
-
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Content -->
-                                <div class="post-content mt-0">
-                                    <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                    <a href="single-post.html" class="post-title mb-2">Thailand cave rescue: Boys 'doing
-                                        well' after spending night</a>
-                                    <div class="post-meta d-flex align-items-center mb-2">
-                                        <a href="#" class="post-author">By Jane</a>
-                                        <i class="fa fa-circle" aria-hidden="true"></i>
-                                        <a href="#" class="post-date">Sep 08, 2018</a>
-                                    </div>
-                                    <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id
-                                        tristique sit amet, rutrum non ligula.</p>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 32</a>
-                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 42</a>
-                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
+                                                <!-- Video Duration -->
+                                                <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Post Content -->
+                                            <div class="post-content mt-0">
+                                                <a href="#" class="post-cata cata-sm cata-success">
+                                                    {{ $game_posts->name }}
+                                                </a>
+                                                <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title mb-2">{{ $post->title }}</a>
+                                                <div class="post-meta d-flex">
+                                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
+                                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> {{ $post->page_views == 0?0:$post->page_views }}</a>
+                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            @endif
+                        @endforeach
+                    @endforeach
+                    
+                    <!-- Single Sport Post Area -->
+                    @foreach ($sport as $sport_posts)
+                        @foreach ($sport_posts->posts as $post)
+                             @if($loop->first)
 
-                    <!-- Single Post Area -->
-                    <div class="single-post-area mb-30">
-                        <div class="row align-items-center">
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/23.jpg" alt="">
+                                <div class="single-post-area mb-30">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Post Thumbnail -->
+                                            <div class="post-thumbnail">
+                                                <img src="{{ asset('img/bg-img/21.jpg') }}" alt="">
 
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Content -->
-                                <div class="post-content mt-0">
-                                    <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                    <a href="single-post.html" class="post-title mb-2">Theresa May battles Brexiteer
-                                        backlash amid disquiet</a>
-                                    <div class="post-meta d-flex align-items-center mb-2">
-                                        <a href="#" class="post-author">By Jane</a>
-                                        <i class="fa fa-circle" aria-hidden="true"></i>
-                                        <a href="#" class="post-date">Sep 08, 2018</a>
-                                    </div>
-                                    <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id
-                                        tristique sit amet, rutrum non ligula.</p>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 32</a>
-                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 42</a>
-                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Post Area -->
-                    <div class="single-post-area mb-30">
-                        <div class="row align-items-center">
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/24.jpg" alt="">
-
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Content -->
-                                <div class="post-content mt-0">
-                                    <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                    <a href="single-post.html" class="post-title mb-2">Theresa May warned Brexit
-                                        strategy 'risks putting Jeremy Corbyn</a>
-                                    <div class="post-meta d-flex align-items-center mb-2">
-                                        <a href="#" class="post-author">By Jane</a>
-                                        <i class="fa fa-circle" aria-hidden="true"></i>
-                                        <a href="#" class="post-date">Sep 08, 2018</a>
-                                    </div>
-                                    <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id
-                                        tristique sit amet, rutrum non ligula.</p>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 32</a>
-                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 42</a>
-                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
+                                                <!-- Video Duration -->
+                                                <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Post Content -->
+                                            <div class="post-content mt-0">
+                                                <a href="#" class="post-cata cata-sm cata-danger">
+                                                    {{ $game_posts->name }}
+                                                </a>
+                                                <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title mb-2">{{ $post->title }}</a>
+                                                <div class="post-meta d-flex">
+                                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
+                                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> {{ $post->page_views == 0?0:$post->page_views }}</a>
+                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            @endif
+                        @endforeach
+                    @endforeach
 
+                    @foreach ($travel as $travel_posts)
+                        @foreach ($travel_posts->posts as $post)
+                             @if($loop->first)
+
+                                <div class="single-post-area mb-30">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Post Thumbnail -->
+                                            <div class="post-thumbnail">
+                                                <img src="{{ asset('img/bg-img/21.jpg') }}" alt="">
+
+                                                <!-- Video Duration -->
+                                                <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Post Content -->
+                                            <div class="post-content mt-0">
+                                                <a href="#" class="post-cata cata-sm cata-primary">
+                                                    {{ $game_posts->name }}
+                                                </a>
+                                                <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title mb-2">{{ $post->title }}</a>
+                                                <div class="post-meta d-flex">
+                                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
+                                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> {{ $post->page_views == 0?0:$post->page_views }}</a>
+                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+                        @endforeach
+                    @endforeach
+
+                    @foreach ($business as $business_posts)
+                        @foreach ($business_posts->posts as $post)
+                             @if($loop->first)
+
+                                <div class="single-post-area mb-30">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Post Thumbnail -->
+                                            <div class="post-thumbnail">
+                                                <img src="{{ asset('img/bg-img/21.jpg') }}" alt="">
+
+                                                <!-- Video Duration -->
+                                                <span class="video-duration">{{ $post->created_at->toDateString() }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Post Content -->
+                                            <div class="post-content mt-0">
+                                                <a href="#" class="post-cata cata-sm cata-success">
+                                                    {{ $game_posts->name }}
+                                                </a>
+                                                <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title mb-2">{{ $post->title }}</a>
+                                                <div class="post-meta d-flex">
+                                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
+                                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> {{ $post->page_views == 0?0:$post->page_views }}</a>
+                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+                        @endforeach
+                    @endforeach
                 </div>
             </div>
 
