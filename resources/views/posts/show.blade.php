@@ -31,8 +31,9 @@
                             <a href="single-post.html" class="post-title mb-2">{{ $post->title }}</a>
 
                             <div class="d-flex justify-content-between mb-30">
+                                <input type="hidden" class="slug" value="{{ $post->slug }}">
                                 <div class="post-meta d-flex align-items-center">
-                                    <a href="#" class="post-author">By {{ $author->name }}</a>
+                                    <a href="#" class="post-author">By {{ $post->user->name }}</a>
                                     <i class="fa fa-circle" aria-hidden="true"></i>
                                     <span class="post-date font-weight-bold">{{ $post->created_at }}</span>
                                 </div>
@@ -41,7 +42,7 @@
                                         {{ count($post->comments) }}</a>
                                     <a href="#"><i class="fas fa-eye" aria-hidden="true"></i>
                                         {{ $post->page_views }}</a>
-                                    <a href="#"><i class="fas fa-thumbs-up" aria-hidden="true"></i> 7</a>
+                                    <a href="#" class="uplike"><i class="fas fa-thumbs-up" aria-hidden="true"></i> {{ $post->likes_count == 0?0:$post->likes_count }}</a>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +64,7 @@
                                 <img src="{{ asset('img/bg-img/30.jpg') }}" alt="author-avatar">
                             </div>
                             <div class="post-author-desc pl-4">
-                                <a href="#" class="author-name">{{ $author->name }}</a>
+                                <a href="#" class="author-name">{{ $post->user->name }}</a>
                                 <div class="post-author-social-info">
                                     <a href="#"><i class="fab fa-facebook"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>

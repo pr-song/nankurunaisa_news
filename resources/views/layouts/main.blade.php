@@ -5,6 +5,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     
     <!-- Title -->
@@ -34,5 +35,6 @@
     <script src="{!! asset('js/plugins/plugins.js') !!}"></script>
     <!-- Active js -->
     <script src="{!! asset('js/active.js') !!}"></script>
+    <script src="{!! asset('js/uplike.js') !!}"></script>
 </body>
 </html>

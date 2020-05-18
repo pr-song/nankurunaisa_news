@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Post;
-use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PostsController extends Controller
 {
     public function show($slug)
     {
-        $post = Post::whereSlug($slug)->firstOrFail();
+        $post = Post::with('user')->whereSlug($slug)->firstOrFail();
         $post->page_views++;
         $post->save();
-        $author = User::whereId($post->user_id)->firstOrFail();
         $categories = $post->categories()->get();
         $related_posts_id = [];
         foreach($categories as $category)
@@ -31,6 +30,17 @@ class PostsController extends Controller
             ->limit(2)
             ->get();
 
-        return view('posts.show', compact('post', 'related_posts', 'author'));
+        return view('posts.show', compact('post', 'related_posts'));
+    }
+
+    public function upLike(Request $request)
+    {
+        $post = Post::whereSlug($request->slug)->firstOrFail();
+        $post->incrLike();
+        $post->save();
+
+        return response()->json([
+            'likes_count' => $post->likes_count
+        ]);
     }
 }
