@@ -24,6 +24,7 @@ Route::name('app.')->group(function(){
 
     /* ##### Commnent ##### */
     Route::post('/comment', 'CommentsController@newComment')->middleware('auth')->name('new_comment');
+    Route::post('/like', 'PostsController@upLike')->middleware('auth');
 });
 
 Auth::routes();

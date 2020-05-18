@@ -374,7 +374,7 @@
                             <a href="#"><i class="far fa-eye" aria-hidden="true"></i>
                                 {{ $post->page_views }}
                             </a>
-                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 15</a>
+                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> {{ $post->likes_count == 0?0:$post->likes_count }}</a>
                         </div>
                     </div>
                 </div>
@@ -532,7 +532,7 @@
                                             <a href="#"><i class="far fa-eye" aria-hidden="true"></i>
                                                 {{ $post->page_views }}
                                             </a>
-                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
+                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> {{ $post->likes_count == 0?0:$post->likes_count }}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -574,7 +574,7 @@
                                             <a href="#"><i class="far fa-eye" aria-hidden="true"></i>
                                                 {{ $post->page_views }}
                                             </a>
-                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
+                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> {{ $post->likes_count == 0?0:$post->likes_count }}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -616,7 +616,7 @@
                                             <a href="#"><i class="far fa-eye" aria-hidden="true"></i>
                                                 {{ $post->page_views }}
                                             </a>
-                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
+                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> {{ $post->likes_count == 0?0:$post->likes_count }}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -657,7 +657,7 @@
                                             <a href="#"><i class="far fa-eye" aria-hidden="true"></i>
                                                 {{ $post->page_views }}
                                             </a>
-                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
+                                            <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> {{ $post->likes_count == 0?0:$post->likes_count }}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -769,7 +769,7 @@
                                         {{ $post->comments->count() }}</a>
                                     <a href="#"><i class="far fa-eye" aria-hidden="true"></i>
                                         {{ $post->page_views }}</a>
-                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
+                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> {{ $post->likes_count == 0?0:$post->likes_count }}</a>
                                 </div>
                             </div>
 
@@ -805,7 +805,7 @@
                                                 <div class="post-meta d-flex">
                                                     <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
                                                     <a href="#"><i class="far fa-eye" aria-hidden="true"></i> {{ $post->page_views == 0?0:$post->page_views }}</a>
-                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
+                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> {{ $post->likes_count == 0?0:$post->likes_count }}</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -841,7 +841,7 @@
                                                 <div class="post-meta d-flex">
                                                     <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
                                                     <a href="#"><i class="far fa-eye" aria-hidden="true"></i> {{ $post->page_views == 0?0:$post->page_views }}</a>
-                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
+                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> {{ $post->likes_count == 0?0:$post->likes_count }}</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -876,7 +876,7 @@
                                                 <div class="post-meta d-flex">
                                                     <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
                                                     <a href="#"><i class="far fa-eye" aria-hidden="true"></i> {{ $post->page_views == 0?0:$post->page_views }}</a>
-                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
+                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> {{ $post->likes_count == 0?0:$post->likes_count }}</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -911,7 +911,7 @@
                                                 <div class="post-meta d-flex">
                                                     <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
                                                     <a href="#"><i class="far fa-eye" aria-hidden="true"></i> {{ $post->page_views == 0?0:$post->page_views }}</a>
-                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 7</a>
+                                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> {{ $post->likes_count == 0?0:$post->likes_count }}</a>
                                                 </div>
                                             </div>
                                         </div>
