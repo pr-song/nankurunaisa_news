@@ -16,8 +16,9 @@ class StaticPagesController extends Controller
         $game = Category::with('posts')->where('name', 'Game')->get();
         $trending_posts = Post::orderBy('page_views', 'desc')->limit(3)->get();
         $lated_posts = Post::orderBy('created_at', 'desc')->limit(5)->get();
+        $post = Post::whereDate('created_at', now()->startOfMonth())->get();
 
-        return view('home', compact('trending_posts', 'lated_posts','sport', 'business', 'travel', 'education', 'game'));
+        return view('home', compact('trending_posts', 'lated_posts', 'sport', 'business', 'travel', 'education', 'game'));
     }
 
     public function about()
