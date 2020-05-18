@@ -1,7 +1,7 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="{{ route('app.home') }}" class="brand-link">
+    <a href="{{ route('manager.admin_dashboard') }}" class="brand-link">
         <img src="{!! asset('img/core-img/logo.png') !!}" alt="Vizew Logo" class="brand-image elevation-3">
         <span class="brand-text font-weight-light">Dashboard</span>
     </a>
