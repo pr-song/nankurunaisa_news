@@ -400,103 +400,28 @@
 
                     <!-- Featured Post Slides -->
                     <div class="featured-post-slides owl-carousel mb-30">
-                        <!-- Single Feature Post -->
-                        <div class="single-feature-post video-post bg-img"
-                            style="background-image: url(img/bg-img/14.jpg);">
-                            <!-- Play Button -->
-                            <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
-                                    aria-hidden="true"></i></a>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
-                                    should be completed Thursday</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
-                                </div>
-                            </div>
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
-
-                        <!-- Single Feature Post -->
-                        <div class="single-feature-post video-post bg-img"
-                            style="background-image: url(img/bg-img/7.jpg);">
-                            <!-- Play Button -->
-                            <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
-                                    aria-hidden="true"></i></a>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents
-                                    should be completed Thursday</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 25</a>
-                                </div>
-                            </div>
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <!-- Single Blog Post -->
-                        <div class="col-12 col-md-6">
-                            <div class="single-post-area mb-80">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/12.jpg" alt="">
-
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
-
+                        @foreach ($featured_posts as $post)
+                            <!-- Single Feature Post -->
+                            <div class="single-feature-post video-post bg-img"
+                                style="background-image: url(img/bg-img/14.jpg);">
                                 <!-- Post Content -->
                                 <div class="post-content">
-                                    <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                    <a href="single-post.html" class="post-title">Searching for the 'angel' who held me
-                                        on Westminste Bridge</a>
+                                    @foreach ($post->categories as $category)
+                                        <a href="#" class="post-cata">
+                                            {{ $category->name }}
+                                        </a>
+                                    @endforeach
+                                    <a href="{{ route('app.post_detail', $post->slug) }}" class="post-title">{{ $post->title }}</a>
                                     <div class="post-meta d-flex">
-                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 28</a>
-                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 17</a>
-                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
+                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> {{ count($post->comments) }}</a>
+                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> {{ $post->page_views }}</a>
+                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> {{ $post->likes_count }}</a>
                                     </div>
-                                </div>
+                                </div>                       
+                                <!-- Video Duration -->
+                                <span class="video-duration">{{ $post->created_at->toDateString() }}</span>                       
                             </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="col-12 col-md-6">
-                            <div class="single-post-area mb-80">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/13.jpg" alt="">
-
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
-
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                    <a href="single-post.html" class="post-title">Love Island star's boyfriend found
-                                        dead after her funeral</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="far fa-comments" aria-hidden="true"></i> 14</a>
-                                        <a href="#"><i class="far fa-eye" aria-hidden="true"></i> 38</a>
-                                        <a href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i> 22</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
 
                     <div class="row">
@@ -1025,66 +950,19 @@
                             <h4>Hot Channels</h4>
                             <div class="line"></div>
                         </div>
-
+                        @foreach ($hot_users as $user)
                         <!-- Single YouTube Channel -->
                         <div class="single-youtube-channel d-flex align-items-center">
                             <div class="youtube-channel-thumbnail">
                                 <img src="img/bg-img/25.jpg" alt="">
                             </div>
                             <div class="youtube-channel-content">
-                                <a href="single-post.html" class="channel-title">Music Channel</a>
+                                <a href="single-post.html" class="channel-title">{{ $user->name }}</a>
                                 <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
                                         aria-hidden="true"></i> Subscribe</a>
                             </div>
                         </div>
-
-                        <!-- Single YouTube Channel -->
-                        <div class="single-youtube-channel d-flex align-items-center">
-                            <div class="youtube-channel-thumbnail">
-                                <img src="img/bg-img/26.jpg" alt="">
-                            </div>
-                            <div class="youtube-channel-content">
-                                <a href="single-post.html" class="channel-title">Trending Channel</a>
-                                <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
-                                        aria-hidden="true"></i> Subscribe</a>
-                            </div>
-                        </div>
-
-                        <!-- Single YouTube Channel -->
-                        <div class="single-youtube-channel d-flex align-items-center">
-                            <div class="youtube-channel-thumbnail">
-                                <img src="img/bg-img/27.jpg" alt="">
-                            </div>
-                            <div class="youtube-channel-content">
-                                <a href="single-post.html" class="channel-title">Travel Channel</a>
-                                <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
-                                        aria-hidden="true"></i> Subscribe</a>
-                            </div>
-                        </div>
-
-                        <!-- Single YouTube Channel -->
-                        <div class="single-youtube-channel d-flex align-items-center">
-                            <div class="youtube-channel-thumbnail">
-                                <img src="img/bg-img/28.jpg" alt="">
-                            </div>
-                            <div class="youtube-channel-content">
-                                <a href="single-post.html" class="channel-title">Sport Channel</a>
-                                <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
-                                        aria-hidden="true"></i> Subscribe</a>
-                            </div>
-                        </div>
-
-                        <!-- Single YouTube Channel -->
-                        <div class="single-youtube-channel d-flex align-items-center">
-                            <div class="youtube-channel-thumbnail">
-                                <img src="img/bg-img/29.jpg" alt="">
-                            </div>
-                            <div class="youtube-channel-content">
-                                <a href="single-post.html" class="channel-title">TV Show Channel</a>
-                                <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
-                                        aria-hidden="true"></i> Subscribe</a>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
 
                     <!-- ***** Single Widget ***** -->
